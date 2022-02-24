@@ -1,31 +1,32 @@
 {
-  "name": "doit_nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
   "dependencies": {
+    "@types/passport": "^1.0.7",
     "body-parser": "^1.19.2",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "error-handler": "^1.0.0",
+    "errorhandler": "^1.5.1",
     "express": "^4.17.3",
     "express-error-handler": "^1.1.0",
+    "express-flash": "^0.0.2",
     "express-session": "^1.17.2",
-    "http": "0.0.1-security",
-    "mongodb": "^4.4.0",
-    "path": "^0.12.7",
-    "serve-static": "^1.14.2"
+    "jayson": "^3.6.6",
+    "json-rpc-2.0": "^1.1.0",
+    "mongoose": "^6.2.3",
+    "nconf": "^0.11.3",
+    "npm": "^8.3.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "name": "node",
+  "version": "1.0.0",
+  "main": "calc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/22SWU/doit_nodejs.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/22SWU/doit_nodejs/issues"
-  },
-  "homepage": "https://github.com/22SWU/doit_nodejs#readme"
+  "description": ""
 }
