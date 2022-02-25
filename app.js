@@ -36,16 +36,16 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 console.log("뷰 엔진이 ejs로 설정되었습니다.");
 
+var router = express.Router();
 router_loader.init(app, router);
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
-);
-
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(
+//   bodyParser.urlencoded({
+//     extended: true,
+//   })
+// );
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/views", static(path.join(__dirname, "views")));
 app.use("/public", static(path.join(__dirname, "public")));
